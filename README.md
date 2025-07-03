@@ -53,7 +53,7 @@ portfolio-Fullstack/
 
 1. **Clona el repositorio:**
    ```bash
-   git clone <url-del-repo>
+   git clone https://github.com/PierreVega17/Portfolio-Fullstack.git
    cd portfolio-Fullstack
    ```
 2. **Instala las dependencias:**
