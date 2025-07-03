@@ -1,0 +1,72 @@
+---
+import Navbar from '../../components/Navbar.jsx';
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Administrador de Tareas | Proyecto</title>
+    <style>
+      body, h1, h2, h3, p, ul, li, span, a {
+        font-family: 'Segoe UI', Arial, sans-serif;
+      }
+      body { background: #fff; color: #222; }
+      body.dark { background: #181818; color: #f2f2f2; }
+      .container {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 2rem 2.5rem;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 16px #eee;
+        box-sizing: border-box;
+      }
+      body.dark .container { background: #232323; box-shadow: 0 2px 16px #222; }
+      .tags { margin-top: 1rem; }
+      .tag { display: inline-block; background: #e0e0e0; border-radius: 4px; padding: 0.2rem 0.5rem; margin-right: 0.3rem; font-size: 0.9em; }
+      body.dark .tag { background: #444; color: #fff; }
+      .demo-link { display: inline-block; margin-top: 1.5rem; padding: 0.7rem 2rem; background: #1976d2; color: #fff; border-radius: 6px; text-decoration: none; font-weight: bold; transition: background 0.2s; }
+      .demo-link:hover { background: #125ea2; }
+      .back-btn { display:inline-block;margin-bottom:1.5rem;text-decoration:none; }
+      .back-btn button { padding:0.5rem 1.5rem;font-size:1rem;background:#222;color:#fff;border:none;border-radius:6px;cursor:pointer;transition:background 0.2s; }
+      .back-btn button:hover { background: #444; }
+      body.dark .back-btn button { background: #fff; color: #222; }
+      body.dark .back-btn button:hover { background: #e0e0e0; color: #111; }
+      @media (max-width: 900px) {
+        .container { padding: 1.5rem 1rem; }
+      }
+      @media (max-width: 700px) {
+        .container { max-width: 100%; padding: 1rem 0.5rem; }
+        h1 { font-size: 1.5rem; }
+        h2 { font-size: 1.1rem; }
+        h3 { font-size: 1rem; }
+      }
+      @media (max-width: 500px) {
+        .container { padding: 0.7rem 0.2rem; }
+        h1 { font-size: 1.1rem; }
+        h2, h3 { font-size: 0.95rem; }
+        p, span, li { font-size: 0.95rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <Navbar client:load />
+    <div class="container">
+      <a href="/#proyectos" class="back-btn">
+        <button>← Volver a proyectos</button>
+      </a>
+      <h1>Administrador de Tareas</h1>
+      <img src="https://placehold.co/600x250?text=Administrador+de+Tareas" alt="Administrador de Tareas" style="width:100%; border-radius:8px; margin-bottom:1.5rem;" />
+      <p>Plataforma web para la gestión de tareas personales o de equipo. Permite crear, editar, eliminar y organizar tareas por estado y prioridad. Incluye autenticación de usuarios con JWT y una interfaz responsiva desarrollada en React y Bootstrap. El backend utiliza Node.js y Express, y la base de datos es MongoDB. Ideal para organizar proyectos, asignar prioridades y mantener el control de pendientes.</p>
+      <h3>Tecnologías usadas</h3>
+      <div class="tags">
+        <span class="tag">React</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Express</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">JWT</span>
+        <span class="tag">Bootstrap</span>
+      </div>
+      <a class="demo-link" href="#" target="_blank">Ver Demo</a>
+    </div>
+  </body>
+</html> 

@@ -1,0 +1,111 @@
+---
+import Navbar from '../components/Navbar.jsx';
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Proyectos | Jean Pierre Galarreta Vega</title>
+    <style>
+      body, h1, h2, h3, p, ul, li, span {
+        font-family: 'Segoe UI', Arial, sans-serif;
+      }
+      body { font-size: 1.1rem; margin: 0; transition: background 0.3s, color 0.3s; }
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.2rem; }
+      p, span, li { font-size: 1rem; }
+      body.dark {
+        background: #181818;
+        color: #f2f2f2;
+      }
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        margin-top: 2rem;
+      }
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 1rem;
+        width: 300px;
+        box-shadow: 2px 2px 8px #eee;
+        background: #fff;
+      }
+      body.dark .card {
+        background: #232323;
+        border: 1px solid #444;
+        box-shadow: 2px 2px 8px #222;
+      }
+      .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+      .tags {
+        margin-top: 0.5rem;
+      }
+      .tag {
+        display: inline-block;
+        background: #e0e0e0;
+        border-radius: 4px;
+        padding: 0.2rem 0.5rem;
+        margin-right: 0.3rem;
+        font-size: 0.9em;
+      }
+      body.dark .tag {
+        background: #444;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <Navbar client:load />
+    <h1>Proyectos Personales</h1>
+    <div class="cards">
+      <div class="card">
+        <img src="/public/finanzas-personales.png" alt="Finanzas Personales App" />
+        <h2>Finanzas Personales App</h2>
+        <p>Aplicación para gestionar finanzas personales con autenticación social y JWT.</p>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">Material UI</span>
+          <span class="tag">Zustand</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">JWT</span>
+          <span class="tag">OAuth</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/public/blog.png" alt="Blog Personal MERN" />
+        <h2>Blog Personal MERN</h2>
+        <p>Aplicación fullstack para gestionar publicaciones y usuarios, con autenticación segura.</p>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Express</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">JWT</span>
+          <span class="tag">Material UI</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://placehold.co/300x150?text=Administrador+de+Tareas" alt="Administrador de Tareas" />
+        <h2>Administrador de Tareas</h2>
+        <p>Plataforma web para gestionar tareas con organización por estado y prioridad.</p>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Express</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">JWT</span>
+          <span class="tag">Bootstrap</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> 
