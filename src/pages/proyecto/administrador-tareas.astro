@@ -31,6 +31,9 @@ import Navbar from '../../components/Navbar.jsx';
       .back-btn button:hover { background: #444; }
       body.dark .back-btn button { background: #fff; color: #222; }
       body.dark .back-btn button:hover { background: #e0e0e0; color: #111; }
+      .features { margin-top: 1.5rem; }
+      .features ul { padding-left: 1.5rem; }
+      .features li { margin-bottom: 0.5rem; }
       @media (max-width: 900px) {
         .container { padding: 1.5rem 1rem; }
       }
@@ -55,18 +58,38 @@ import Navbar from '../../components/Navbar.jsx';
         <button>← Volver a proyectos</button>
       </a>
       <h1>Administrador de Tareas</h1>
-      <img src="https://placehold.co/600x250?text=Administrador+de+Tareas" alt="Administrador de Tareas" style="width:100%; border-radius:8px; margin-bottom:1.5rem;" />
-      <p>Plataforma web para la gestión de tareas personales o de equipo. Permite crear, editar, eliminar y organizar tareas por estado y prioridad. Incluye autenticación de usuarios con JWT y una interfaz responsiva desarrollada en React y Bootstrap. El backend utiliza Node.js y Express, y la base de datos es MongoDB. Ideal para organizar proyectos, asignar prioridades y mantener el control de pendientes.</p>
+      <img src="/app-tareas.png" alt="Administrador de Tareas" style="width:100%; border-radius:8px; margin-bottom:1.5rem;" />
+      <p>Aplicación web completa para la gestión de tareas y proyectos con sistema de tableros tipo Kanban. Permite crear múltiples tableros organizacionales, gestionar tareas con estados personalizables, y colaborar en tiempo real con otros usuarios. Incluye autenticación JWT, gestión de usuarios, y una interfaz moderna y responsiva.</p>
+      
+      <h3>Características principales</h3>
+      <div class="features">
+        <ul>
+          <li><strong>Múltiples tableros:</strong> Creación y gestión de tableros organizacionales independientes</li>
+          <li><strong>Sistema Kanban:</strong> Organización de tareas en columnas con drag & drop</li>
+          <li><strong>Estados personalizables:</strong> Configuración de columnas y estados según necesidades</li>
+          <li><strong>Autenticación segura:</strong> Sistema de login/registro con JWT</li>
+          <li><strong>Gestión de usuarios:</strong> Administración de miembros del equipo</li>
+          <li><strong>Interfaz responsiva:</strong> Diseño adaptativo para móviles y desktop</li>
+          <li><strong>Tiempo real:</strong> Actualizaciones instantáneas entre usuarios</li>
+          <li><strong>Filtros y búsqueda:</strong> Localización rápida de tareas específicas</li>
+        </ul>
+      </div>
+      
       <h3>Tecnologías usadas</h3>
       <div class="tags">
         <span class="tag">React</span>
+        <span class="tag">TypeScript</span>
         <span class="tag">Node.js</span>
-        <span class="tag">Express</span>
+        <span class="tag">Express.js</span>
         <span class="tag">MongoDB</span>
+        <span class="tag">Mongoose</span>
         <span class="tag">JWT</span>
-        <span class="tag">Bootstrap</span>
+        <span class="tag">Socket.io</span>
+        <span class="tag">Material UI</span>
+        <span class="tag">Vercel</span>
+        <span class="tag">Git</span>
       </div>
-      <a class="demo-link" href="#" target="_blank">Ver Demo</a>
+      <a class="demo-link" href="https://app-task-client.vercel.app/boards" target="_blank">Ver Demo</a>
     </div>
   </body>
 </html> 
